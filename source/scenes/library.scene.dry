@@ -219,8 +219,8 @@ go-to: menu
 
 # WIP: LVP/NFVP formation
 [? if not lvp_formed and not nfvp_formed and not dvp_congress_1929_seen: <span style="color: var(--dvp-color);">**DVP**</span> - <span style="color: var(--dvp-color);"><i>Deutsche Volkspartei</i></span> (German People's Party) - This is us. A conglomeration of likeminded liberals and industrial interests united in nationalism and de jure collaboration with the Weimar Republic, we are the descendants of the once-dominant National Liberal Party. We have commonly advocated for the interests of the German middle class, and under Gustav Stresemann's leadership, our reputation as a sensible alternative to the incoherent <span style="color: #DCCA4A;">**German Democrats**</span> and somewhat radical <span style="color: #3F7BC1;">**National Populists**</span> has only strengthened itself. However, our Industrialists and Nationalists grow unfettered, potentially compromising our position as the party of reason. ?]
-[? if not lvp_formed and not nfvp_formed and dvp_congress_1929_seen and dvp_ideology = "Left": <span style="color: var(--dvp-color);">**DVP**</span> - <span style="color: var(--dvp-color);"><i>Deutsche Volkspartei</i></span> (German People's Party) - This is us. After Gustav Stresemann's death, we have honoured his legacy by choosing his successor, Julius Curtius, a fellow believer in tolerating the current system. With the weakening of the National-Industrialist alliance, we have re-oriented towards greater cooperation with our more centrist partners, and have even begun to court the <span style="color: #E3000F;">**SPD**</span>. Perhaps one day, we will find ourselves as the joint partner in a unified liberal party, but we will continue to work within the parliamentary system nonetheless. ?]
-[? if not lvp_formed and not nfvp_formed and dvp_congress_1929_seen and dvp_ideology = "Right": <span style="color: var(--dvp-color);">**DVP**</span> - <span style="color: var(--dvp-color);"><i>Deutsche Volkspartei</i></span> (German People's Party) - This is us. After Gustav Stresemann's death, the dominance of the party right has led to the ascension of Ernst Scholz as leader, firmly pushing the party towards the right. Stresemann's original vision of the party as the force of the patriotic, liberal, and moderate right has given way to a more extremist interpretation, entrenching ourselves into the grasps of the industrialists and the realm of the anti-parliamentarian right. In particular, we have [? if dnvp_ideology = "Radical": found ourselves to be on greater terms with the <span style="color: #3F7BC1;">**DNVP**</span> and <span style="color: #954B00;">**NSDAP**</span>, united in our opposition to the fallible Republican system. ?][? if dnvp_ideology = "Moderate": sought refuge with furthered ties to the NSDAP, luring in voters from the DNVP who may be less inclined to accept the Republican system. ?] ?]
+[? if not lvp_formed and not nfvp_formed and dvp_congress_1929_seen and dvp_ideology = "Left": <span style="color: var(--dvp-color);">**DVP**</span> - <span style="color: var(--dvp-color);"><i>Deutsche Volkspartei</i></span> (German People's Party) - This is us. After Gustav Stresemann's [? if stresemann_dead:death?][? if not stresemann_dead:resignation?], we have honoured his legacy by choosing his successor, Julius Curtius, a fellow believer in tolerating the current system. With the weakening of the National-Industrialist alliance, we have re-oriented towards greater cooperation with our more centrist partners, and have even begun to court the <span style="color: #E3000F;">**SPD**</span>. Perhaps one day, we will find ourselves as the joint partner in a unified liberal party, but we will continue to work within the parliamentary system nonetheless. ?]
+[? if not lvp_formed and not nfvp_formed and dvp_congress_1929_seen and dvp_ideology = "Right": <span style="color: var(--dvp-color);">**DVP**</span> - <span style="color: var(--dvp-color);"><i>Deutsche Volkspartei</i></span> (German People's Party) - This is us. After Gustav Stresemann's [? if stresemann_dead:death?][? if not stresemann_dead:resignation?], the dominance of the party right has led to the ascension of Ernst Scholz as leader, firmly pushing the party towards the right. Stresemann's original vision of the party as the force of the patriotic, liberal, and moderate right has given way to a more extremist interpretation, entrenching ourselves into the grasps of the industrialists and the realm of the anti-parliamentarian right. In particular, we have [? if dnvp_ideology = "Radical": found ourselves to be on greater terms with the <span style="color: #3F7BC1;">**DNVP**</span> and <span style="color: #954B00;">**NSDAP**</span>, united in our opposition to the fallible Republican system. ?][? if dnvp_ideology = "Moderate": sought refuge with furthered ties to the NSDAP, luring in voters from the DNVP who may be less inclined to accept the Republican system. ?] ?]
 [? if lvp_formed and not lvp_congress_luther_seen: <span style="color: var(--dvp-color);">**LVP**</span> - <span style="color: var(--dvp-color);"><i>Liberale Volkspartei</i></span> (Liberal People's Party) - This is us. After the expansion of our ties with the <span style="color: #DCCA4A;">**[+ddp_name+]**</span> through the Liberal Association, we have finally united the forces of liberalism under a single party. We have firmly set ourselves to be the representatives of the German middle class, while moderating somewhat in terms of nationalist emphasis and integrating ourselves into the parliamentary process in a more honest manner. However, this achievement of liberal unity also poses an issue which threatens to destabilize the new party:  The former Progressives and Democrats of the <span style="color: #DCCA4A;">**[+ddp_name+]**</span> have already begun to clash with our Industrialists, and until intra-party elections are held, the main component holding the party together will be the current leader and proponent of the party's creation, Hans Luther himself. ?]
 [? if nfvp_formed and dvp_leader = "Dietrich": <span style="color: var(--dvp-color);">**NFVP**</span> - <span style="color: var(--dvp-color);"><i>Nationalfortschrittliche Volkspartei</i></span> (National Progressive People's Party) - This is us. Formed with members of the <span style="color: #DCCA4A;">**German Democrats**</span> and Front 1929 with the assistance the <span style="color: #D3D3A9;">**Young German Order**</span>, [? if peoples_conservatives_dvp: and the moderate splinters of the <span style="color: #3F7BC1;">**DNVP**</span>, ?] we are the representatives of the German middle class and the party of the parliamentarian right. Having a former <span style="color: #DCCA4A;">**DDP**</span> member as <span style="color: var(--dvp-color);">**NFVP**</span> leader has shifted the party towards a more parliamentary stance, though the party's more varied factions may hamper some attempts to reach across the aisle. ?]
 [? if nfvp_formed and dvp_leader = "Curtius": <span style="color: var(--dvp-color);">**NFVP**</span> - <span style="color: var(--dvp-color);"><i>Nationalfortschrittliche Volkspartei</i></span> (National Progressive People's Party) - This is us. Formed with members of the <span style="color: #DCCA4A;">**German Democrats**</span> and Front 1929 with the assistance the <span style="color: #D3D3A9;">**Young German Order**</span>, [? if peoples_conservatives_dvp: and the moderate splinters of the <span style="color: #3F7BC1;">**DNVP**</span>, ?] we are the representatives of the German middle class and the party of the parliamentarian right. Julius Curtius' ascension to party leadership has maintained our course as the party of reason, even as the introduction of parties to the left and right have diluted our ideological unity somewhat. ?]
@@ -333,52 +333,41 @@ Loyalty: [+ prussian_police_loyalty : loyalty +]
 @factions
 go-to: neorevisionists if neorevisionism > 0; menu if neorevisionism <= 0
 
-**Internal factions of the SPD**
+**Internal factions of the <span style="color: var(--dvp-color);">[+ dvp_name +]</span>**
 
 Overall dissent: [+ dissent_percent : dissent +]
 
-**Left**
+[? if nationalists_dvp: **Nationalists** ?]
 
-Many leftists are former members of the USPD (the left-wing, anti-war Independent Social Democratic Party), or are young radicals. Many are interested in closer cooperation with the KPD, and some support extraparliamentary action.
+[? if nationalists_dvp: Nationalists are on the extreme right of our party. Many support closer ties with the national opposition, and severing all ties with the <span style="color: #E3000F;">**SPD**</span> and even the <span style="color: #000000;">**Z**</span> and <span style="color: #DCCA4A;">**[+ ddp_name +]**</span>. They often oppose bourgoise and liberal unity. Recently, they have aligned themselves with the industrialists in our party, to try and weaken the Stressermanite wings of our party. Stressermann’s focus on foreign policy has caused their influence to grow in recent years. ?]
 
-Strength: [+ left_strength : strength +]
+[? if nationalists_dvp: Strength: [+ nationalist_strength : strength +] ?]
 
-Dissent: [+ left_dissent : dissent +]
+[? if nationalists_dvp: Dissent: [+ nationalist_dissent : dissent +] ?]
 
-**Centrists**
+[? if industrialists_dvp: **Industrialists** ?]
 
-Centrists in the SPD are followers of the doctrine of orthodox Marxism as expounded by Karl Kautsky and later Rudolf Hilferding. They seek a middle course between reform and revolution, while defending the democratic state.
+[? if industrialists_dvp: Industrialists are positioned on the centre-right of our party. The industrialists themselves are not involved too much in party politics, preferring to fund the party and subtly try to influence our direction. They support low taxes on the rich, and often no welfare state; for this, the weimar coalition parties have grown distrustful of us, with their influence growing recently. They often oppose bourgoise unity, but if the liberal movement was to undergo a decline, they may end up supporting it. ?]
 
-Strength: [+ center_strength : strength +]
+[? if industrialists_dvp: Strength: [+ industrialist_strength : strength +] ?]
 
-Dissent: [+ center_dissent : dissent +]
+[? if industrialists_dvp: Dissent: [+ industrialist_dissent : dissent +] ?]
 
-**Labor**
+[? if labor_dvp: **Labor** ?]
 
-Many SPD members are also part of the ADGB, the federation of free trade unions. Their goal is economic reform and benefits for organized workers.
+[? if labor_dvp: The <span style="color: var(--dvp-color);">**[+ dvp_name +]**</span> has several affiliated trade unions; the largest of which is the DHV. They are often the antithesis of the industrialists, and sometimes favour more progressive taxation with a healthy welfare state. They are often supportive of cooperation with the weimar coalition parties, and liberal or bourgeois unity. Many labour members are also close allies of the Liberals, helping to fend off the industrialists from completely taking over the party for now. ?]
 
-Strength: [+ labor_strength : strength +]
+[? if labor_dvp: Strength: [+ labor_strength : strength +] ?]
 
-Dissent: [+ labor_dissent : dissent +]
+[? if labor_dvp: Dissent: [+ labor_dissent : dissent +] ?]
 
-**Reformists**
+[? if liberals_dvp: **Liberals** ?]
 
-Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy against the far right and left. [? if spd_prussia : They are dominant in the state government of Prussia. ?]
+[? if liberals_dvp: The centre of our party, the liberals are believers in the Stressermannite message; a party of reason and republicanism. They are some of the foremost supporters of the republic within the <span style="color: var(--dvp-color);">**[+ dvp_name +]**</span>, and often passionately support liberal and bourgeois unity. They also support cooperation with the <span style="color: #E3000F;">**SPD**</span>, even if it is reluctantly. Most of our party is comprised of Liberals. They are descended from the pre-war <span style="color: #98C22C;">**NLP**</span>, with some - such as Stressemann - holding monarchist ideals. ?]
 
-Strength: [+ reformist_strength : strength +]
+[? if liberals_dvp: Strength: [+ liberal_strength : strength +] ?]
 
-Dissent: [+ reformist_dissent : dissent +]
-
-@neorevisionists
-go-to: menu
-
-**Neorevisionists**
-
-Neorevisionists focus on defending the republic and expanding democracy, while also expanding the party's base beyond the working class to create a people's party. They support new propaganda methods and extraparliamentary action in defense of the republic.
-
-Strength: [+ neorevisionist_strength : strength +]
-
-Dissent: [+ neorevisionist_dissent : dissent +]
+[? if liberals_dvp: Dissent: [+ liberal_dissent : dissent +] ?]
 
 
 @figures
