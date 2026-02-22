@@ -36,13 +36,13 @@ The <span style="color: #D3D3A9;">**Young German Order**</span> has already agre
 - @nfvp_ddp_fail: The <span style="color: #DCCA4A;">**[+ ddp_name +]**</span> refuses!
 
 @nfvp_ddp_fail
-view-if: nfvp_formation_points < 4
+view-if: nfvp_formation_points < 2
 on-arrival: nfvp_failed = 1
 
 Shockingly our negoations to unify with the <span style="color: #DCCA4A;">**[+ ddp_name +]**</span> have failed! It seems the increasing power of our industrial wing has scared the <span style="color: #DCCA4A;">**[+ ddp_name +]**</span> away from unification. It seems the dream of liberal unity is truly dead.
 
 @nfvp_ddp_success
-view-if: nfvp_formation_points >= 4
+view-if: nfvp_formation_points >= 2
 on-arrival: nfvp_success = 1
 
 Our negotiations for a unified republican right wing party have finally succeeded! The new <span style="color: #00A2DE;">**Nationalfortschrittliche Volkspartei**</span> will go a long way to strengthening the republic.
